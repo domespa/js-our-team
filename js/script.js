@@ -47,7 +47,6 @@ const teamMembers = [
 // DOM ELMS
 
 const cardsContainerElm = document.getElementById("cards-container");
-const cardContainerElm = document.getElementById("card-container");
 const cardElm = document.getElementById("card");
 // const cardElm = document.getElementById("card");
 
