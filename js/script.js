@@ -47,8 +47,15 @@ const teamMembers = [
 // DOM ELMS
 
 const cardsContainerElm = document.getElementById("cards-container");
-const cardElm = document.getElementById("card");
-// const cardElm = document.getElementById("card");
+const memberFormElm = document.getElementById("member-form");
+const nameElm = document.getElementById("name");
+const roleElm = document.getElementById("role");
+const emailElm = document.getElementById("email");
+const imageElm = document.getElementById("image");
+console.log(nameElm)
+console.log(roleElm)
+console.log(emailElm)
+
 
 // Stampa nomi
 let memberList = "";
@@ -66,8 +73,33 @@ for(let i = 0; i < teamMembers.length; i++) {
       </div>
     </div>
     `;
-}
+};
 
 cardsContainerElm.innerHTML = memberList;
 
+// FORM
+// DOM EVENTS
 
+createCard();
+
+
+memberFormElm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+
+  const name = nameElm.value;
+  const role = roleElm.value; 
+  const email = emailElm.value;
+  const img = imageElm.value;
+
+    teamMembers.push({
+      name,
+      role,
+      email,
+      img
+    });
+
+
+    createCard();
+
+});

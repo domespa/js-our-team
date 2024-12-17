@@ -23,13 +23,34 @@
                     <img id="contact-image" src="" alt="" class="img-fluid" width="35%">
                     <div class="card-body ps-3 pt-3">
                         <h5 id="full-name"></h5>
-                        <p id="role"></p>
+                        <p id="roles"></p>
                         <p id="contact"></p>
                     </div>
                 </div>
             </div>
         </div>      
     </div>
+    <div class="container text-center">
+        <h4>Add Team Member</h4>
+
+        <form id="member-form">
+            <div class="pb-3">
+                <input class="w-25" type="text" id="name" placeholder="Inserisci il tuo nome e cognome" required>
+            </div>
+            <div class="pb-3">
+                <input class="w-25" type="text" id="role" placeholder="Inserisci il tuo ruolo nell'azienda" required>
+            </div>
+            <div class="pb-3">
+                <input class="w-25" type="text" id="email" placeholder="Inserisci la tua email" required>
+            </div>
+            <div class="pb-3">
+                <input class="w-25" type="text" id="image" placeholder="Inserisci una tua foto" required>
+            </div>
+            <button type="submit">Aggiungi membro</button>
+        </form>
+    </div>
+
+    <script src="js/function.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
